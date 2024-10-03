@@ -1,0 +1,10 @@
+#Para calcular o volume de uma árvore
+import math
+def volume_arvore(diametro, altura):
+  raio = (diametro/100) /2
+  volume = (math.pi * (raio ** 2) * altura) / 3
+  return volume
+diametro = float(input('Digite o diâmetro da árvore em centímetros: '))
+altura = float(input('Digite a altura da árvore em metros: '))
+volume = volume_arvore(diametro, altura)
+print('O volume da árvore é:  {:.4f} m³'.format(volume))
